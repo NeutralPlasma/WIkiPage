@@ -1,0 +1,11 @@
+// Define variable defaults
+$body-bg: rgb(24,24,24);
+$body-color: rgb(211, 211, 211);
+
+$theme-colors: (
+  "primary": #fc5101
+);
+
+
+// Then import Bootstrap an BootstrapVue SCSS files (order is important)
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
