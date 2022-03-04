@@ -14,6 +14,8 @@ import Alert from '@/components/bootstrap/Alert.vue'
 
 
     <h1>HoloExtension</h1>
+    
+    <p class="text-primary">Simple yet effective plugin for leaderboards</p>
     <hr class="border-2 border-top">
 
     <h2> Basic information </h2>
