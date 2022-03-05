@@ -5,29 +5,30 @@ import Alert from '@/components/bootstrap/Alert.vue'
 </script>
 
 <template>
+<div class="container-fluid dark">
+  <div class="row flex-xl-nowrap">
 
-<div class="container position-relative" id="content">
-  <Alert type="danger" dismissible>
-    <template #text>
-      <strong>This wiki is not completed, and it still in early beta version!</strong>
-    </template>
-  </Alert>
-  
+    <div class="col-12 col-md-3 col-xl-2 bd-sidebar bg-darker">
 
-  <div class="row h-100 mt-5">
+      <ul class="nav navbar-expand-sm flex-column sticky-top justify-content-start" id="sideBarMarkup">
+        <li class="nav-item text-primary">
+          <a class="nav-link active text-primary" href="#">HoloExtension</a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link text-secondary" href="#">Link</a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link text-secondary" href="#">Link</a>
+        </li>
+        <li class="nav-item m-1">
+          <a class="nav-link text-secondary" href="#">Link</a>
+        </li>
+      </ul>
 
-    <div class="col-sm-2 border-end me-0 pe-0" >
-      <div class="mt-5 mb-3 sticky-top" id="side">
-          <ul class="nav flex-md-column flex-row justify-content-between" id="sidenav">
-              <li class="nav-item"><a href="#plugin" class="nav-link active pl-0">Plugin</a></li>
-              <li class="nav-item"><a href="#placeholder" class="nav-link pl-0">Choosing Placeholder</a></li>
-              <li class="nav-item"><a href="#leaderboard" class="nav-link pl-0">Creating leaderboard</a></li>
-          </ul>
-      </div>
+
     </div>
 
-
-    <div class="col py-5">
+    <div class="col-7 d-flex ms-5 mt-2">
         <div data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="0" tabindex="0">
           <div class="holoextension">
             <h2 class="mb-3">HoloExtension</h2>
@@ -63,15 +64,23 @@ import Alert from '@/components/bootstrap/Alert.vue'
 
             <h4 id="leaderboard">2. Creating the leaderboard </h4>
             <p>After you have selected which placeholder you want to use, you can start by typing the next command ingame <span class="text-primary">/he</span>, this command is going to
-              open a menu for you. </p>
+              open a menu for you.</p>
 
 
 
             
           </div>
         </div>
-      </div>
+      
     </div>
+
+
+
+
+
+  </div>
+
+
 </div>
 
 </template>

@@ -1,10 +1,69 @@
 // Define variable defaults
 $body-bg: rgb(24,24,24);
+$body-darker: rgb(34, 34, 34);
 $body-color: rgb(211, 211, 211);
+
+
+$scroll-light: rgb(100, 100, 100);
+$scroll-dark: rgb(15, 15, 15);
+$scroll-darker: rgb(20, 20, 20);
 
 $theme-colors: (
   "primary": #fc5101
 );
+
+
+.bg-darker{
+  background-color: $body-darker;
+}
+
+.bd-sidebar{
+  min-height: 94vh;
+}
+
+
+.active {
+  background-color: $body-bg;
+  border-radius: 10px;
+}
+
+.nav-item{
+  transition: 0.3s;
+}
+
+.nav-item:hover{
+  background-color: $body-bg;
+  border-radius: 10px;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $scroll-dark;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $scroll-light;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $scroll-darker;
+}
+
+
+@media (max-width: 991.98px) { 
+  .bd-sidebar{
+    min-height: 0vh;
+  }
+}
 
 
 // Then import Bootstrap an BootstrapVue SCSS files (order is important)

@@ -3,7 +3,7 @@
 
 
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav aria-label="sidebar" role="navigation" class="header-navbar navbar-expand-sm navbar navbar-with-menu navbar-hide-on-scroll navbar-dark bg-darker navbar-shadow navbar-border w-100">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
             <img src="@/assets/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
@@ -27,4 +27,7 @@
         </div>
     </nav>
 </template>
+
+
+
 
